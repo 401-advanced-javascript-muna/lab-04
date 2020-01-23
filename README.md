@@ -8,14 +8,14 @@
 
 ### Links and Resources
 
-- [submission PR](http://xyz.com)
-- [ci/cd](http://xyz.com) (GitHub Actions)
+- [submission PR](https://github.com/401-advanced-javascript-muna/lab-04/pull/1)
+- [ci/cd](https://github.com/401-advanced-javascript-muna/lab-04/actions) (GitHub Actions)
 
 
 
 #### How to initialize/run your application (where applicable)
 
--  `npm start`
+-  `npm run test`
 
 #### Tests
 
@@ -26,4 +26,4 @@
 #### UML
 
 Link to an image of the UML for your application and response to events
-![UML](UML.jpg)
+![UML](uml.jpg)
