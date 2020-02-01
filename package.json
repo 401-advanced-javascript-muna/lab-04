@@ -5,7 +5,8 @@
   "main": "memory-data-model.js",
   "scripts": {
     "test": "jest --verbose --coverage",
-    "test-watch": "jest --verbose --coverage --watch"
+    "test-watch": "jest --verbose --coverage --watch",
+    "lint": "eslint '**/*.js'"
   },
   "repository": {
     "type": "git",

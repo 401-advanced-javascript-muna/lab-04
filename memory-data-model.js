@@ -1,4 +1,4 @@
-'use strict';
+
 
 const uuid = require('uuid/v4');  //create a uniqe id
 
