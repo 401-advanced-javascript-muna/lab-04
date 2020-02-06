@@ -1,4 +1,6 @@
-const Categories = require('../categories/categories.js');
+'use strict ';
+
+const Categories = require('../models/categories-model');
 
 describe('Categories Model', () => {
 
@@ -62,6 +64,7 @@ describe('Categories Model', () => {
           .then(deleted => {
             // console.log('deleted', deleted)
 
+            // eslint-disable-next-line no-undefined
             expect(deleted).toEqual(undefined);
           })
           .catch(e => console.error('ERR', e));

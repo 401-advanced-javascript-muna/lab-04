@@ -20,6 +20,8 @@
 #### Tests
 
 - How do you run tests?
+npm run test
+
 - Any tests of note?
 - Describe any tests that you did not complete, skipped, etc
 

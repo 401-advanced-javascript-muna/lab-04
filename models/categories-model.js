@@ -1,8 +1,6 @@
 
 
-const DataModel = require('../memory-data-model.js');
-// const productsModel = require('../categories/products.model.js');
-
+const DataModel = require('./memory-data-model.js');
 
 class Categories extends DataModel {
   constructor() {

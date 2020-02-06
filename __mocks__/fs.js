@@ -1,4 +1,4 @@
-'use strict';
+
 
 module.exports = exports = {};
 
@@ -9,6 +9,7 @@ exports.readFile = (file, cb) => {
     cb('Invalid File');
   }
   else {
+    // eslint-disable-next-line no-undefined
     cb(undefined, Buffer.from(fileContents));
   }
 };
@@ -19,6 +20,7 @@ exports.writeFile = (file, buffer, cb) => {
   }
   else {
     fileContents = buffer;
+    // eslint-disable-next-line no-undefined
     cb(undefined, true);
   }
 };

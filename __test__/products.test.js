@@ -1,7 +1,7 @@
+'use strict ';
+const Products = require('../models/products.model');
 
-const Products = require('../categories/products.model');
-
-describe('Products Model', () => {
+describe(' Products Model', () => {
 
   let products;
 
@@ -17,7 +17,7 @@ describe('Products Model', () => {
           expect(record[key]).toEqual(obj[key]);
         });
       })
-      .catch(e => console.error('ERR', e));
+      .catch(e => console.error('ERROR', e));
   });
 
   it('can get() a Product', () => {
@@ -27,7 +27,6 @@ describe('Products Model', () => {
         return products.get(record._id)
           .then(product => {
             Object.keys(obj).forEach(key => {
-              // console.log('category[0][key]',category[0][key])
               expect(product[0][key]).toEqual(obj[key]);
             });
           });
@@ -46,7 +45,7 @@ describe('Products Model', () => {
 
             expect(updated).toEqual({ name: 'test2' });
           })
-          .catch(e => console.error('ERR', e));
+          .catch(e => console.error('ERROR', e));
 
       });
   });
@@ -59,13 +58,12 @@ describe('Products Model', () => {
       .then(record => {
         console.log('record-id', record);
         return products.delete(record._id)
-        // console.log('record-id',record._id)
-          .then(deleted => {
-            // console.log('deleted', deleted)
 
+          .then(deleted => {
+            // eslint-disable-next-line no-undefined
             expect(deleted).toEqual(undefined);
           })
-          .catch(e => console.error('ERR', e));
+          .catch(e => console.error('ERROR', e));
 
       });
   });
